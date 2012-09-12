@@ -21,6 +21,8 @@
 		8A47E3D915E519AC00B97B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47E3B715E519AC00B97B2B /* Foundation.framework */; };
 		8A47E3E115E519AC00B97B2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A47E3DF15E519AC00B97B2B /* InfoPlist.strings */; };
 		8A47E3E415E519AC00B97B2B /* KSNestedTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47E3E315E519AC00B97B2B /* KSNestedTableViewTests.m */; };
+		8A47E3F015E51A8C00B97B2B /* KSNestedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47E3EF15E51A8C00B97B2B /* KSNestedTableView.m */; };
+		8A47E40D15E51FB800B97B2B /* KSNestedIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47E40C15E51FB800B97B2B /* KSNestedIndexPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8A47E3E015E519AC00B97B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A47E3E215E519AC00B97B2B /* KSNestedTableViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSNestedTableViewTests.h; sourceTree = "<group>"; };
 		8A47E3E315E519AC00B97B2B /* KSNestedTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSNestedTableViewTests.m; sourceTree = "<group>"; };
+		8A47E3EE15E51A8C00B97B2B /* KSNestedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNestedTableView.h; sourceTree = "<group>"; };
+		8A47E3EF15E51A8C00B97B2B /* KSNestedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSNestedTableView.m; sourceTree = "<group>"; };
+		8A47E40B15E51FB800B97B2B /* KSNestedIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNestedIndexPath.h; sourceTree = "<group>"; };
+		8A47E40C15E51FB800B97B2B /* KSNestedIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSNestedIndexPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		8A47E3BB15E519AC00B97B2B /* KSNestedTableView */ = {
 			isa = PBXGroup;
 			children = (
+				8A47E3ED15E51A4800B97B2B /* KSNestedTableView */,
 				8A47E3C415E519AC00B97B2B /* KSAppDelegate.h */,
 				8A47E3C515E519AC00B97B2B /* KSAppDelegate.m */,
 				8A47E3C715E519AC00B97B2B /* MainStoryboard_iPhone.storyboard */,
@@ -152,6 +159,17 @@
 				8A47E3DF15E519AC00B97B2B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A47E3ED15E51A4800B97B2B /* KSNestedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8A47E3EE15E51A8C00B97B2B /* KSNestedTableView.h */,
+				8A47E3EF15E51A8C00B97B2B /* KSNestedTableView.m */,
+				8A47E40B15E51FB800B97B2B /* KSNestedIndexPath.h */,
+				8A47E40C15E51FB800B97B2B /* KSNestedIndexPath.m */,
+			);
+			name = KSNestedTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +284,8 @@
 				8A47E3C215E519AC00B97B2B /* main.m in Sources */,
 				8A47E3C615E519AC00B97B2B /* KSAppDelegate.m in Sources */,
 				8A47E3CF15E519AC00B97B2B /* KSViewController.m in Sources */,
+				8A47E3F015E51A8C00B97B2B /* KSNestedTableView.m in Sources */,
+				8A47E40D15E51FB800B97B2B /* KSNestedIndexPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
