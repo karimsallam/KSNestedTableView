@@ -79,8 +79,29 @@
 	if (!node.hasChildren) return;
 	
 	node.inclusive = !node.inclusive;
-	[rootNode flattenElementsWithCacheRefresh:YES];
-	[self.tableView reloadData];
+  [rootNode flattenElementsWithCacheRefresh:YES];
+  
+  //////////////////////////////////////////////
+  //Animatedly open/close children nodes
+  NSInteger theRow = indexPath.row+1;
+  NSMutableArray *indexArray = [NSMutableArray array];
+  for (int i = 0; i < node.children.count; i++) {
+    NSIndexPath *nextIndexPath = [NSIndexPath indexPathForRow:theRow inSection:indexPath.section];
+    [indexArray addObject:nextIndexPath];
+    theRow++;
+  }
+  [self.tableView beginUpdates];
+  if (node.inclusive) {
+    [self.tableView insertRowsAtIndexPaths:indexArray withRowAnimation:UITableViewRowAnimationAutomatic];
+  }else{
+    //when "close" a node's parent, this node's children all need to be deleted here
+    [self.tableView deleteRowsAtIndexPaths:indexArray withRowAnimation:UITableViewRowAnimationAutomatic];
+  }
+  [self.tableView endUpdates];
+  //////////////////////////////////////////////
+  
+  //This part code was:
+  //[self.tableView reloadData];
 }
 
 @end
