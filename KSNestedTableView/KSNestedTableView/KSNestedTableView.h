@@ -13,9 +13,11 @@
 
 @protocol KSNestedTableViewDataSource;
 
-@interface KSNestedTableView : UIView
+@interface KSNestedTableView : UIView <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) id <KSNestedTableViewDataSource> dataSource;
+
+@property (strong, nonatomic) UITableView *tableView; 
 
 @property (nonatomic, getter = isMultipleSelectionEnabled) BOOL multipleSelectionEnabled;
 
@@ -36,6 +38,13 @@
                          atNestedIndexPath:(KSNestedIndexPath *)nestedIndexPath
                      cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
+- (void)nestedTableView:(KSNestedTableView *)nestedTableView
+      atNestedIndexPath:(KSNestedIndexPath *)nestedIndexPath
+   insertRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)nestedTableView:(KSNestedTableView *)nestedTableView
+      atNestedIndexPath:(KSNestedIndexPath *)nestedIndexPath
+   deleteRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
