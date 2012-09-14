@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EFFB05A160373370064FD4A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFB057160373370064FD4A /* TestViewController.m */; };
+		3EFFB05E160373870064FD4A /* KSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFB05D160373870064FD4A /* KSNode.m */; };
+		3EFFB061160373B40064FD4A /* KSNestedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFB060160373B40064FD4A /* KSNestedTableViewCell.m */; };
 		8A47E3B615E519AC00B97B2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47E3B515E519AC00B97B2B /* UIKit.framework */; };
 		8A47E3B815E519AC00B97B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47E3B715E519AC00B97B2B /* Foundation.framework */; };
 		8A47E3BA15E519AC00B97B2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47E3B915E519AC00B97B2B /* CoreGraphics.framework */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3EFFB057160373370064FD4A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		3EFFB05C160373870064FD4A /* KSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNode.h; sourceTree = "<group>"; };
+		3EFFB05D160373870064FD4A /* KSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSNode.m; sourceTree = "<group>"; };
+		3EFFB05F160373B40064FD4A /* KSNestedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNestedTableViewCell.h; sourceTree = "<group>"; };
+		3EFFB060160373B40064FD4A /* KSNestedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSNestedTableViewCell.m; sourceTree = "<group>"; };
+		3EFFB0621603791E0064FD4A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		8A47E3B115E519AC00B97B2B /* KSNestedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSNestedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A47E3B515E519AC00B97B2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A47E3B715E519AC00B97B2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,6 +135,8 @@
 				8A47E3CA15E519AC00B97B2B /* MainStoryboard_iPad.storyboard */,
 				8A47E3CD15E519AC00B97B2B /* KSViewController.h */,
 				8A47E3CE15E519AC00B97B2B /* KSViewController.m */,
+				3EFFB0621603791E0064FD4A /* TestViewController.h */,
+				3EFFB057160373370064FD4A /* TestViewController.m */,
 				8A47E3BC15E519AC00B97B2B /* Supporting Files */,
 			);
 			path = KSNestedTableView;
@@ -168,6 +179,10 @@
 				8A47E3EF15E51A8C00B97B2B /* KSNestedTableView.m */,
 				8A47E40B15E51FB800B97B2B /* KSNestedIndexPath.h */,
 				8A47E40C15E51FB800B97B2B /* KSNestedIndexPath.m */,
+				3EFFB05C160373870064FD4A /* KSNode.h */,
+				3EFFB05D160373870064FD4A /* KSNode.m */,
+				3EFFB05F160373B40064FD4A /* KSNestedTableViewCell.h */,
+				3EFFB060160373B40064FD4A /* KSNestedTableViewCell.m */,
 			);
 			name = KSNestedTableView;
 			sourceTree = "<group>";
@@ -286,6 +301,9 @@
 				8A47E3CF15E519AC00B97B2B /* KSViewController.m in Sources */,
 				8A47E3F015E51A8C00B97B2B /* KSNestedTableView.m in Sources */,
 				8A47E40D15E51FB800B97B2B /* KSNestedIndexPath.m in Sources */,
+				3EFFB05A160373370064FD4A /* TestViewController.m in Sources */,
+				3EFFB05E160373870064FD4A /* KSNode.m in Sources */,
+				3EFFB061160373B40064FD4A /* KSNestedTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +487,7 @@
 				8A47E3E915E519AC00B97B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A47E3EA15E519AC00B97B2B /* Build configuration list for PBXNativeTarget "KSNestedTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +496,7 @@
 				8A47E3EC15E519AC00B97B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
